@@ -3,33 +3,71 @@
 <head>
     <title>Uhm hi</title>
     <style>
-        div {
-            color: white;
-            font-size: 150px;
-            font-family: Comic Sans Ms, Arial;
+        .centerVertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
         }
-        body {
-            background-color: black;
-            background-image: url("https://bido67.github.io/discord-backgrounds-bido/Back_FuckedBigger.png");
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        @media screen and (orientation: portrait) {
+        @media (prefers-color-scheme: light){
             body {
-                background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
+                background-color: white;
+            }
+            div.lightMode, .lightMode div {
+                color: black;
+                font-size: 75px;
+                font-family: Comic Sans Ms, Arial;
+            }
+            div.darkMode {
+                display: none;
+            }
+            ::-webkit-scrollbar {
+                display: none;
             }
         }
+        @media (prefers-color-scheme: dark){
+            body {
+                background-color: black;
+                background-image: url("https://bido67.github.io/discord-backgrounds-bido/Back_FuckedBigger.png");
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            div.lightMode {
+                display: none;
+            }
+            div.darkMode {
+                color: white;
+                font-size: 150px;
+                font-family: Comic Sans Ms, Arial;
+            }
+            @media screen and (orientation: portrait) {
+                body {
+                    background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
+                }
+            }
+        }
+        
+        
     </style>
 </head>
 <body>
-    <center>
-        <div class="hello" style="font-size:150px;">Hello</div>
-    </center>
-    <center>
-        <div class="iexist" style="font-size:50px;">I exist UwU</div>
-    </center>
+    <div class="darkMode">
+        <center>
+            <div class="hello" style="font-size:150px;">Hello</div>
+        </center>
+        <center>
+            <div class="iexist" style="font-size:50px;">I exist UwU</div>
+        </center>
+    </div>
+    <div class="lightMode centerVertical">
+        <center>
+            <div>HOW DARE YOU USE LIGHT MODE!!!</div>
+        </center>
+    </div>
     
 </body>
 </html>
