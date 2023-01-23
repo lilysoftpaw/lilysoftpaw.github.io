@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-<head>
-    <meta charset="utf-8">
-    <title>Uhm hi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .centerVertical {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100vw;
-            height: 100vh;
-        }
-        @media (prefers-color-scheme: light){
-            body {
-                background-color: white !important;
-                background-image: none !important;
+    <head>
+        <meta charset="utf-8" />
+        <title>Uhm hi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            .centerVertical {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100vw;
+                height: 100vh;
             }
-            div.lightMode, .lightMode div {
-                color: black;
-                font-size: 75px;
-                font-family: Comic Sans Ms, Arial;
+            @media (prefers-color-scheme: light) {
+                body {
+                    background-color: white !important;
+                    background-image: none !important;
+                }
+                div.lightMode,
+                .lightMode div {
+                    color: black;
+                    font-size: 75px;
+                    font-family: Comic Sans Ms, Arial;
+                }
+                div.darkMode {
+                    display: none;
+                }
+                ::-webkit-scrollbar {
+                    display: none;
+                }
             }
-            div.darkMode {
-                display: none;
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: black !important;
+                    background-image: none !important;
+                }
+                div.lightMode {
+                    display: none;
+                }
+                div.darkMode {
+                    color: white;
+                    font-size: 75px;
+                    font-family: Comic Sans Ms, Arial;
+                }
+                ::-webkit-scrollbar {
+                    display: none;
+                }
             }
-            ::-webkit-scrollbar {
-                display: none;
-            }
-        }
-        @media (prefers-color-scheme: dark){
-            body {
-                background-color: black !important;
-                background-image: none !important;
-            }
-            div.lightMode {
-                display: none;
-            }
-            div.darkMode {
-                color: white;
-                font-size: 75px;
-                font-family: Comic Sans Ms, Arial;
-            }
-            ::-webkit-scrollbar {
-                display: none;
-            }
-        }
-        
-        
-    </style>
-</head>
-<body>
-    <div class="darkMode centerVertical">
-        <center>
-            <div>Thank you for using dark mode :D</div>
-        </center>
-    </div>
-    <div class="lightMode centerVertical">
-        <center>
-            <div>HOW DARE YOU USE LIGHT MODE!!!</div>
-        </center>
-    </div>
-    
-</body>
+        </style>
+    </head>
+    <body>
+        <div class="darkMode centerVertical">
+            <center>
+                <div>Thank you for using dark mode :D</div>
+            </center>
+        </div>
+        <div class="lightMode centerVertical">
+            <center>
+                <div>HOW DARE YOU USE LIGHT MODE!!!</div>
+            </center>
+        </div>
+    </body>
 </html>
