@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
+    <meta charset="utf-8">
     <title>Uhm hi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -14,7 +15,8 @@
         }
         @media (prefers-color-scheme: light){
             body {
-                background-color: white;
+                background-color: white !important;
+                background-image: none !important;
             }
             div.lightMode, .lightMode div {
                 color: black;
@@ -30,12 +32,8 @@
         }
         @media (prefers-color-scheme: dark){
             body {
-                background-color: black;
-                background-image: url("https://bido67.github.io/discord-backgrounds-bido/Back_FuckedBigger.png");
-                background-size: cover;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
+                background-color: black !important;
+                background-image: none !important;
             }
             div.lightMode {
                 display: none;
@@ -44,11 +42,6 @@
                 color: white;
                 font-size: 150px;
                 font-family: Comic Sans Ms, Arial;
-            }
-            @media screen and (orientation: portrait) {
-                body {
-                    background-image: url(https://bido67.github.io/discord-backgrounds-bido/Back_9x16Bigger.png) !important;
-                }
             }
         }
         
