@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="utf-8">
+	<meta name="google-adsense-account" content="ca-pub-9426094377509223">
+	
+    <title>Mao</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXPCL2D1Q3"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'G-XXPCL2D1Q3');
+	</script>
+    <style>
+        .centerVertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        @media (prefers-color-scheme: light){
+            body {
+                background-color: white;
+            }
+            div.lightMode, .lightMode div {
+                color: black;
+                font-size: 75px;
+                font-family: Comic Sans Ms, Arial;
+            }
+            div.darkMode {
+                display: none;
+            }
+            ::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        @media (prefers-color-scheme: dark){
+            body {
+                background-color: black;
+                background-image: url("./assets/images/mao.png");
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            div.lightMode {
+                display: none;
+            }
+            div.darkMode {
+                color: white;
+                font-size: 150px;
+                font-family: Comic Sans Ms, Arial;
+            }
+            @media screen and (orientation: portrait) {
+                body {
+                    background-image: url("./assets/images/mao.png") !important;
+                }
+            }
+        }
+        .hello {
+            font-size:150px;
+        }
+        .iexist{
+            font-size:50px;
+        }
+        .retart {
+                position: fixed;
+                top: 25vh;
+                bottom: 25vh;
+                left: 25vw;
+                right: 25vw;
+                height: 50vh;
+                width: 50vw;
+                border: #714576 solid 5px;
+                border-radius: 25px;
+                background-color: #ba71c245;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="darkMode retart">
+        <center>
+            <div class="hello">Hello</div>
+        </center>
+        <center>
+            <div class="iexist">I am mao :3</div>
+        </center>
+    </div>
+    <div class="lightMode centerVertical retart">
+        <center>
+            <div>HOW DARE YOU USE LIGHT MODE!!!</div>
+        </center>
+    </div>
+    
+</body>
+</html>
